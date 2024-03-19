@@ -1,9 +1,12 @@
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-import os
 
 def modulo_overview():
+
+    import streamlit as st
+    import pandas as pd
+    import plotly.express as px
+    import os
+
+
     st.header("Análisis Exploratorio de Datos")
     st.write("Este módulo se puede dedicar al análisis exploratorio de los datos relacionados con las ARS.")
 

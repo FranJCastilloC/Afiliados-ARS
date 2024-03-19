@@ -7,6 +7,12 @@ from modelo import modulo_modelo
 # Configura la página para utilizar todo el ancho disponible
 st.set_page_config(layout="wide")
 
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+load_css('c:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/Assets/style.css')
+
 
 # Creación del menú lateral para la navegación
 st.sidebar.title("Menú")
