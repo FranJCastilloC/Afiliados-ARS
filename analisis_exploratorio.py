@@ -9,7 +9,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from plotly.subplots import make_subplots
 import json
-import folium
 import pydeck as pdk
 import numpy as np
 import matplotlib.colors as mcolors
@@ -942,12 +941,12 @@ def modulo_analisis_exploratorio():
 
 
 
-    folder_path = "C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL" 
-    data_frames = load_data(folder_path)
-    prepare_dataframes(data_frames)
-        
-    if 'df_unificado' in data_frames and 'educacion' in data_frames:
-        display_data_visualizations(data_frames['df_unificado'], data_frames['educacion'],data_frames['Sector'],data_frames['edad'],data_frames['lista_Afiliados_1'], data_frames['Indicador'],data_frames['Eda'],
-                                    data_frames['sec'], data_frames['Fina'],data_frames['ipc'], data_frames['pres'])
+folder_path = "C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL" 
+data_frames = load_data(folder_path)
+prepare_dataframes(data_frames)
+    
+if 'df_unificado' in data_frames and 'educacion' in data_frames:
+    display_data_visualizations(data_frames['df_unificado'], data_frames['educacion'],data_frames['Sector'],data_frames['edad'],data_frames['lista_Afiliados_1'], data_frames['Indicador'],data_frames['Eda'],
+                                data_frames['sec'], data_frames['Fina'],data_frames['ipc'], data_frames['pres'])
 
  
