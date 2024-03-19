@@ -62,7 +62,7 @@ def modulo_analisis_exploratorio():
         if 'lista_Afiliados_1' in data_frames:
             df = data_frames['lista_Afiliados_1']
             # Suponiendo que ya has agregado las columnas 'Año' y 'Mes' como en tu código anterior
-            df_diciembre = df[df['Mes'] == 12]  # Filtramos para quedarnos solo con los datos de diciembre
+            df_diciembre = df[df['Mes'] == 12]  
             df_afiliados_agrupados = df_diciembre.groupby('Año').agg({'Afiliados C': 'sum'}).reset_index()
             df_afiliados_agrupados = df_afiliados_agrupados.melt(id_vars='Año', var_name='Categoría', value_name='Cantidad')
             data_frames['df_afiliados_agrupados'] = df_afiliados_agrupados
