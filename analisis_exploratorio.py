@@ -1,21 +1,21 @@
 
-import streamlit as st
-import pandas as pd
-import plotly.graph_objs as go
-import plotly.express as px
-import os
-import seaborn as sns 
-import matplotlib.pyplot as plt
-from plotly.subplots import make_subplots
-import json
-import pydeck as pdk
-import numpy as np
-import matplotlib.colors as mcolors
-
 
 
 #Definicion del modulo de Exploracion de datos
 def modulo_analisis_exploratorio():
+
+    import streamlit as st
+    import pandas as pd
+    import plotly.graph_objs as go
+    import plotly.express as px
+    import os
+    import seaborn as sns 
+    import matplotlib.pyplot as plt
+    from plotly.subplots import make_subplots
+    import json
+    import pydeck as pdk
+    import numpy as np
+    import matplotlib.colors as mcolors
 
     st.header("Análisis Exploratorio de Datos")
     st.write("Este apartado se enfoca en la exploración de datos desde cuatro perspectivas distintas, abordando el planteamiento e interpretación del problema, y el análisis e interpretación de datos asociados con los afiliados al Sistema de Seguridad Social (SFS), la población en general, y las finanzas del sistema dentro de regimen contributivo de salud.")
@@ -932,13 +932,6 @@ def modulo_analisis_exploratorio():
                 fig_monto = px.pie(datos_filtrados, values='Porcentaje Monto', names='Descripcion',
                                 title=f'Distribución de Monto - {fecha_seleccionada}')
                 st.plotly_chart(fig_monto, use_container_width=True)
-
-
-
-
-
-
-
 
     folder_path = "C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL" 
     data_frames = load_data(folder_path)
