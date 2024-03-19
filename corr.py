@@ -1,12 +1,14 @@
-import streamlit as st
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
 
 def modulo_corr():
+
+    import streamlit as st
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+
     st.header("Correlacion de los datos")
     st.write("Este módulo se puede dedicar al análisis exploratorio de los datos relacionados con las ARS.")
+    
 
  
     # Carga o define tu DataFrame aquí, por ejemplo:
