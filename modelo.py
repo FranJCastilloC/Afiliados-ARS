@@ -1,9 +1,3 @@
-import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
-import streamlit as st
 
 
 def download_template():
@@ -161,6 +155,8 @@ def train_model_dispersiones_actuales(data, gasto_salud_pred, capitas_pred):
 
 # Función principal que ejecuta la aplicación Streamlit
 def modulo_modelo():
+
+    from sklearn.model_selection import train_test_split
 
  
 
