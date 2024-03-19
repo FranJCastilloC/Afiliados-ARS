@@ -1,0 +1,83 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #b82905;
+    --secondary-color: #d14926;
+    --accent-color: #94d2bd;
+    --background-color: #e9d8a6;
+    --text-color: #001219;
+    --text-color-light: #ffffff;
+}
+
+/* Fuente principal */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Títulos y subtítulos */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Botones y elementos interactivos */
+button, .stButton > button {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .stButton > button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Personalización de radio buttons */
+.stRadio > label {
+    color: var(--text-color);
+}
+
+/* Personalización de sidebar */
+.sidebar .sidebar-content {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    width: 300px; /* Ajusta el ancho del sidebar */
+}
+
+/* Títulos del sidebar */
+.sidebar .sidebar-content h1 {
+    font-size: 1.5em; /* Aumenta el tamaño del título del sidebar */
+}
+
+/* Personalización de elementos de lista en sidebar */
+.sidebar .sidebar-content ul {
+    font-size: 1.2em; /* Aumenta el tamaño de la lista */
+}
+
+/* Personalización para los radio buttons - los oculta y resalta el texto al seleccionar */
+.stRadio > label {
+    display: block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stRadio > label:hover {
+    background: var(--accent-color);
+}
+
+/* Esto esconde los círculos de selección de los radio buttons */
+.stRadio input[type="radio"] {
+    display: none;
+}
+
+/* Esto cambia el estilo del texto del radio button cuando está seleccionado */
+.stRadio input[type="radio"]:checked + label {
+    background: var(--accent-color);
+    color: var(--text-color-light);
+}
