@@ -9,13 +9,13 @@ import os
 st.set_page_config(layout="wide")
 
 def load_css(file_name):
-    base_path = os.path.dirname(__file__)  
-    file_path = os.path.join(base_path, file_name)  
+    base_path = os.path.dirname(__file__)  # Obtiene la ruta del directorio donde se encuentra el script actual
+    file_path = os.path.join(base_path, file_name)  # Construye la ruta completa usando la ruta relativa
     with open(file_path) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-load_css('c:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/Assets/style.css')
-
+# Aquí cambiamos la ruta a una relativa. Asegúrate de ajustar 'assets/style.css' a tu estructura de directorios.
+load_css('assets/style.css')
 
 # Creación del menú lateral para la navegación
 st.sidebar.title("Menú")
