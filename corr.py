@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
  # Carga o define tu DataFrame aquí, por ejemplo:
-    df = pd.read_excel('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL/corr2.xlsx', engine='openpyxl')
+df = pd.read_excel('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL/corr2.xlsx', engine='openpyxl')
 
 
 
