@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-
 from sklearn.metrics import mean_squared_error, r2_score
 import streamlit as st
 
@@ -162,6 +161,7 @@ def train_model_dispersiones_actuales(data, gasto_salud_pred, capitas_pred):
 def modulo_modelo():
 
     from sklearn.model_selection import train_test_split
+    from sklearn.metrics import mean_squared_error, r2_score
 
  
 
