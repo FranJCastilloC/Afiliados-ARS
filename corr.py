@@ -3,8 +3,6 @@
 
 import streamlit as st
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 
  # Carga o define tu DataFrame aquí, por ejemplo:
 df = pd.read_excel('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL/corr2.xlsx', engine='openpyxl')
@@ -12,6 +10,12 @@ df = pd.read_excel('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dash
 
 
 def modulo_corr():
+
+    
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+
+
 
     st.header("Correlacion de los datos")
     st.write("Este módulo se puede dedicar al análisis exploratorio de los datos relacionados con las ARS.")
