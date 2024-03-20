@@ -3,12 +3,12 @@ from analisis_exploratorio import modulo_analisis_exploratorio
 from intro import modulo_overview
 from corr import modulo_corr
 from modelo import modulo_modelo
-import os
 
 # Configura la página para utilizar todo el ancho disponible
 st.set_page_config(layout="wide")
 
 def load_css(file_name):
+    import os
     base_path = os.path.dirname(__file__)  # Obtiene la ruta del directorio donde se encuentra el script actual
     file_path = os.path.join(base_path, file_name)  # Construye la ruta completa usando la ruta relativa
     with open(file_path) as f:
