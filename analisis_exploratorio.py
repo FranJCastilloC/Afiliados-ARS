@@ -1,6 +1,4 @@
 
-
-
 #Definicion del modulo de Exploracion de datos
 def modulo_analisis_exploratorio():
 

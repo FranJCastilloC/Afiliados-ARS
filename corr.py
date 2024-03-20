@@ -1,19 +1,20 @@
 
-def modulo_corr():
 
-    import streamlit as st
-    import pandas as pd
-    import seaborn as sns
-    import matplotlib.pyplot as plt
+
+import streamlit as st
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+ # Carga o define tu DataFrame aquí, por ejemplo:
+    df = pd.read_excel('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL/corr2.xlsx', engine='openpyxl')
+
+
+
+def modulo_corr():
 
     st.header("Correlacion de los datos")
     st.write("Este módulo se puede dedicar al análisis exploratorio de los datos relacionados con las ARS.")
-    
-
- 
-    # Carga o define tu DataFrame aquí, por ejemplo:
-    df = pd.read_excel('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/BD FINAL/corr2.xlsx', engine='openpyxl')
-
 
     # Titulo de tu aplicación
     st.title('Visualizador de Correlaciones')
@@ -31,6 +32,7 @@ def modulo_corr():
 
         # Configurar tamaño de figura en Seaborn
         fig, ax = plt.subplots(figsize=(10, 8)) # Ajusta el tamaño según necesites
+
         
         # Crear el heatmap
         sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5, ax=ax)
