@@ -3,6 +3,7 @@ from analisis_exploratorio import modulo_analisis_exploratorio
 from intro import modulo_overview
 from corr import modulo_corr
 from modelo import modulo_modelo
+import plotly.graph_objs as go
 
 def main():
     # Configura la página para utilizar todo el ancho disponible
