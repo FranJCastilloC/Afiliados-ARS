@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LinearRegression
+
 from sklearn.metrics import mean_squared_error, r2_score
 import streamlit as st
 
@@ -52,6 +52,7 @@ def create_card(title, value, value_format="{:,.2f}", color="#03bb85"):
 
 # Función para entrenar el modelo de 'Universo de empleados cotizables'
 def train_model_universo(data):
+    from sklearn.linear_model import LinearRegression
     # Asegúrate de que las columnas coincidan con las de tus datos
     features = ['PEA', 'PET', 'Secundario2', 'Universitario3']
     target = 'Universo de empleados contizables'  # Asegúrate de que este sea el nombre correcto de la columna objetivo
