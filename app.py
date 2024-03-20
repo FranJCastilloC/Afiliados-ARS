@@ -15,7 +15,7 @@ def load_css(file_name):
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Aquí cambiamos la ruta a una relativa. Asegúrate de ajustar 'assets/style.css' a tu estructura de directorios.
-load_css('assets/style.css')
+load_css('C:/Users/franc/OneDrive - INTEC/Escritorio/Proyecto ARS/Dashboards/Assets/style.css')
 
 # Creación del menú lateral para la navegación
 st.sidebar.title("Menú")
