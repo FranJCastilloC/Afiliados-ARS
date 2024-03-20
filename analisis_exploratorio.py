@@ -1,21 +1,21 @@
 
-import streamlit as st
-import pandas as pd
-import plotly.graph_objs as go
-import plotly.express as px
-import os
-import seaborn as sns 
-import matplotlib.pyplot as plt
-from plotly.subplots import make_subplots
-import json
-import pydeck as pdk
-import numpy as np
-import matplotlib.colors as mcolors
+
 
 #Definicion del modulo de Exploracion de datos
 def modulo_analisis_exploratorio():
 
-
+    import streamlit as st
+    import pandas as pd
+    import plotly.graph_objs as go
+    import plotly.express as px
+    import os
+    import seaborn as sns 
+    import matplotlib.pyplot as plt
+    from plotly.subplots import make_subplots
+    import json
+    import pydeck as pdk
+    import numpy as np
+    import matplotlib.colors as mcolors
 
     st.header("Análisis Exploratorio de Datos")
     st.write("Este apartado se enfoca en la exploración de datos desde cuatro perspectivas distintas, abordando el planteamiento e interpretación del problema, y el análisis e interpretación de datos asociados con los afiliados al Sistema de Seguridad Social (SFS), la población en general, y las finanzas del sistema dentro de regimen contributivo de salud.")
@@ -941,4 +941,4 @@ def modulo_analisis_exploratorio():
         display_data_visualizations(data_frames['df_unificado'], data_frames['educacion'],data_frames['Sector'],data_frames['edad'],data_frames['lista_Afiliados_1'], data_frames['Indicador'],data_frames['Eda'],
                                     data_frames['sec'], data_frames['Fina'],data_frames['ipc'], data_frames['pres']) 
 if __name__ == "__main__":
-    modulo_analisis_exploratorio()
+    main()
