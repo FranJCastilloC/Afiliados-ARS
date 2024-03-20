@@ -940,5 +940,5 @@ def modulo_analisis_exploratorio():
     if 'df_unificado' in data_frames and 'educacion' in data_frames:
         display_data_visualizations(data_frames['df_unificado'], data_frames['educacion'],data_frames['Sector'],data_frames['edad'],data_frames['lista_Afiliados_1'], data_frames['Indicador'],data_frames['Eda'],
                                     data_frames['sec'], data_frames['Fina'],data_frames['ipc'], data_frames['pres']) 
-if __name__ == "__main__":
-    main()
+if __name__ == "__modulo_analisis_exploratorio__":
+    modulo_analisis_exploratorio()
